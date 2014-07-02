@@ -1,3 +1,5 @@
+# Put home bin dir on the path for various Bash scripts
+export PATH="$HOME/bin:$PATH"
 
 # Include .git-completion.sh
 if [ -f ~/.git-completion.sh ]; then
