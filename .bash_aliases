@@ -1,5 +1,3 @@
-# Put Ruby 1.8 gems on the path
-export PATH=$PATH:/var/lib/gems/1.8/bin
 
 # Include .git-completion.sh
 if [ -f ~/.git-completion.sh ]; then
