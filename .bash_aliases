@@ -1,6 +1,9 @@
 # Put home bin dir on the path for various Bash scripts
 export PATH="$HOME/bin:$PATH"
 
+# Set default editor
+export EDITOR=vim
+
 # Include .git-completion.sh
 if [ -f ~/.git-completion.sh ]; then
   source ~/.git-completion.sh
