@@ -134,7 +134,7 @@ function! SelectaCommand(choice_command, selecta_args, vim_command)
 endfunction
 
 function! SelectaFile(path)
-  call SelectaCommand("find " . a:path . "/* -type f", "", ":e")
+  call SelectaCommand("find " . a:path . " -type f", "", ":e")
 endfunction
 
 nnoremap <leader>f :call SelectaFile(".")<cr>
