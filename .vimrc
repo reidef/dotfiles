@@ -1,6 +1,10 @@
 " This is Reid Gillette's .vimrc file (borrowed heavily from Gary Bernhardt)
 " vim:set ts=2 sts=2 sw=2 expandtab:
 
+" source Pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC EDITING CONFIGURATION
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
