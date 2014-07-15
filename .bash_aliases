@@ -1,6 +1,10 @@
 # Put home bin dir on the path for various Bash scripts
 export PATH="$HOME/bin:$PATH"
 
+# Add chruby
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
 # Set default editor
 export EDITOR=vim
 
