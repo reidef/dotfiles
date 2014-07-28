@@ -172,3 +172,6 @@ function! SelectaFile(path)
 endfunction
 
 nnoremap <leader>f :call SelectaFile(".")<cr>
+
+" stupid bells
+set noerrorbells visualbell t_vb=
