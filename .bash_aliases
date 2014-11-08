@@ -5,6 +5,9 @@ export PATH="$HOME/bin:$PATH"
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
+# Shortcut for clipper for mac
+alias clip="nc localhost 8377"
+
 # Set default editor
 export EDITOR=vim
 
