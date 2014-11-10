@@ -37,3 +37,12 @@ prompt_off() {
   PS1='\$ '
 }
 prompt_on
+
+function run-test() {
+  if [ ! -p .test-commands ]; then
+    mkfifo .test-commands
+  fi
+  while true; do
+    sh -c "$(cat .test-commands)"
+  done
+}
