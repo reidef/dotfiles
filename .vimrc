@@ -230,7 +230,7 @@ function! SelectaCommand(choice_command, selecta_args, vim_command)
 endfunction
 
 function! SelectaFile(path)
-  let exclude_paths = ['.git/*']
+  let exclude_paths = ['.git/*', 'node_modules/*', 'deps/*', '_build/*']
   let find_options = ''
   for exclude_path in exclude_paths
     let find_options = find_options . ' ! -path ''' . a:path . '/' . exclude_path . ''''
