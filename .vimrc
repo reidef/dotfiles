@@ -230,7 +230,13 @@ function! SelectaCommand(choice_command, selecta_args, vim_command)
 endfunction
 
 function! SelectaFile(path)
-  call SelectaCommand("find " . a:path . " -type f", "", ":e")
+  let exclude_paths = ['.git/*']
+  let find_options = ''
+  for exclude_path in exclude_paths
+    let find_options = find_options . ' ! -path ''' . a:path . '/' . exclude_path . ''''
+  endfor
+  echom find_options
+  call SelectaCommand("find " . a:path . " -type f" . find_options, "", ":e")
 endfunction
 
 nnoremap <leader>f :call SelectaFile(".")<cr>
