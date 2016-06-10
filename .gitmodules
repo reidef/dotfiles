@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/vim-mkdir"]
 	path = .vim/bundle/vim-mkdir
 	url = git@github.com:pbrisbin/vim-mkdir.git
+[submodule ".vim/bundle/vim-go"]
+	path = .vim/bundle/vim-go
+	url = git@github.com:fatih/vim-go.git
